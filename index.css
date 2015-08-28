@@ -1,24 +1,25 @@
-p {
-    position: relative;
-    z-index: -1;
-    left: 30px;
-    background-color: rgba(255, 255, 255, .65);
+#dash {
+    line-height: 0.7em;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: #FF0088;
 }
 
-h2.tag {
-    position: relative;
-    z-index: -1;
-    left: 20px;
-    background-color: rgba(255, 255, 255, .65);
-}
-
-h1 {
-    position: relative;
-    z-index: -1;
-    left: 20px;
+#menuu {
+    margin-top: 100px;
+    line-height: 2em;
 }
 
 a {
-    color: #0000a0;
-    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #AAAAAA
+}
+
+p.para {
+    font-weight: lighter;
+    line-height: 1.5em;
 }
