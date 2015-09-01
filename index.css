@@ -6,7 +6,7 @@
 }
 
 #menuu {
-    margin-top: 100px;
+    margin-top: 30%;
     line-height: 2em;
 }
 
@@ -22,11 +22,4 @@ a:active {
 p.para {
     font-weight: lighter;
     line-height: 1.5em;
-}
-
-.photo {
-    box-sizing: border-box;
-    float: left;
-    height: 100px;
-    width: 150px;
 }
