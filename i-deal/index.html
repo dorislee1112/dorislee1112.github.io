@@ -66,12 +66,22 @@
 			number[10]=Math.floor((Math.random() * 10));
 			number[11]=Math.floor((Math.random() * 10));
 
+			var order=[];
+			order[0]=Math.floor((Math.random() * 10));
+			order[1]=Math.floor((Math.random() * 10));
+			order[2]=Math.floor((Math.random() * 10));
+			order[3]=Math.floor((Math.random() * 10));
+
+			document.getElementById("order_num").innerHTML="訂單編號: "+order[0]+order[1]+order[2]+order[3];
 			document.getElementById("result_dollar").innerHTML="應繳金額: "+Math.ceil(y)+"元台幣 + 15元台幣手續費 = "+(Math.ceil(y)+15)+"元台幣";
 			document.getElementById("account").innerHTML="繳款帳號: 004(台灣銀行) "+number[0]+number[1]+number[2]+number[3]+" "+number[4]+number[5]+number[6]+number[7]+" "+number[8]+number[9]+number[10]+number[11];
 			document.getElementById("pay").innerHTML="請於"+today.getFullYear()+"/"+(today.getMonth()+1)+"/"+today.getDate()+" "+today.getHours()+":"+today.getMinutes()+":"+today.getSeconds()+"前完成繳款";
 		}
 
 		function HadPay(){
+
+			var x=document.getElementById("order_list2").value;
+
 			var number=[];
 			number[0]=Math.floor((Math.random() * 10));
 			number[1]=Math.floor((Math.random() * 10));
@@ -89,6 +99,9 @@
 			number[13]=Math.floor((Math.random() * 10));
 			number[14]=Math.floor((Math.random() * 10));
 			number[15]=Math.floor((Math.random() * 10));
+
+
+			document.getElementById("show_num").innerHTML="訂單編號: "+x;
 
 			document.getElementById("card_num").innerHTML="卡號: "+number[0]+number[1]+number[2]+number[3]+" "+number[4]+number[5]+number[6]+number[7]+" "+number[8]+number[9]+number[10]+number[11]+" "+number[12]+number[13]+number[14]+number[15];
 
@@ -159,13 +172,41 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">What is i-Deal?</h2>
                     <hr class="light">
-                    <p class="text-faded" style="font-family: 微軟正黑體;">詹這裡給你打!</p>
+                    <p class="section-heading" style="font-family: 微軟正黑體;">
+                    <big><big>不記名、限額、暫時信用卡</big></br>
+                 
+                         <div class="col-lg-4 text-center">
+                         <p class="text-faded" style="font-family: 微軟正黑體;">
+                            ∥　不記名</big></br></br>
+                            不須身分認證</br>
+                            不須繁雜手續，</br>
+                            只須代稱以及電話</br>
+                            （僅用於連絡）</br>
+                            
+                            </p>
+                        </div>
+                         <div class="col-lg-4 text-center" >
+                         <p class="text-faded" style="font-family: 微軟正黑體;">
+                           <big>∥　限額</big></br></br>
+                           小額或一次性消費</br>
+                           沒有負擔且風險極低</br>
+                           控制預算與方便性共存</br>
+                           </p>
+                        </div>
+                         <div class="col-lg-4 text-center">
+                         <p class="text-faded" style="font-family: 微軟正黑體;">
+                            <big>∥　暫時</big></br></br>
+                            不須長期被綁定</br>
+                            自由性極高</br>
+                            降低資安以及卡片盜刷問題 </p>
+                        </div>
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="flow" style="height: 750px;">
+    <section id="flow" style="height: 850px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -175,19 +216,34 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
+            <div class="row ">
+                <div class="col-lg-5 col-md-5 " style="float:left" >
                     <div class="service-box">
-                        <h4 style="font-family: 微軟正黑體;">小額單筆線上購物信用卡</h4>
-                        <br><img src="short.png" width="120%"><br><br>
-                        <p style="font-family: 微軟正黑體;">一點說明 詹這裡給你打</p>
+                        <h4 style="font-family: 微軟正黑體;" >小額單筆線上購物信用卡</h4>
+                        <br><img src="short.png" width="140%" ><br><br>
+                        <p style="color:gray; font-family: 微軟正黑體;"><strong style="color:rgb(153,175,62)"><big>STEP 1</big></strong>
+                            遇到需要使用信用卡線上付款之情況</br>
+                        <strong style="color:rgb(153,175,62)"><big>STEP 2</big></strong>
+                            至本平台使用外幣換算，輸入需求之台幣金額</br>
+                        <strong style="color:rgb(153,175,62)"><big>STEP 3</big></strong>
+                            至ATM轉帳或匯款項至本平台提供之帳戶</br>
+                        <strong style="color:rgb(153,175,62)"><big>STEP 4</big></strong>
+                            經確認無誤後，即取得該金額之I-Deal卡號</br></p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-5 col-md-5" style="float:right">
                     <div class="service-box">
-                        <h4 style="font-family: 微軟正黑體;">長期線上購物信用卡</h4>
-                        <br><br><img src="long.png" width="110%"><br><br>
-                        <p style="font-family: 微軟正黑體;">一點說明 詹這裡給你打</p>
+                        <h4 style="font-family: 微軟正黑體;">長期線上購物信用卡</h4><br><br>
+                        <br><br><img src="long.png" width="130%"><br><br><br><br><br><br>
+                       <p style="color:gray; font-family: 微軟正黑體;"><strong style="color:rgb(153,175,62)"><big>STEP 1</big></strong>
+                            想要擁有特定金額之臨時卡，可直接輸入金額</br>
+                        <strong style="color:rgb(153,175,62)"><big>STEP 2</big></strong>
+                            至合作銀行親自辦理I-Deal卡</br>
+                        <strong style="color:rgb(153,175,62)"><big>STEP 3</big></strong>
+                            持有臨時卡安心購物！</br></br></br>
+
+                            ※須親自辦理是基於資安保護問題
+                        </p>
                     </div>
                 </div>
             </div>
@@ -200,9 +256,10 @@
                 <div class="col-lg-6 col-sm-6" style="padding-left: 50px; font-family: 微軟正黑體;">
                     <h3 style="font-family: 微軟正黑體;">申辦i-Deal</h3><br>
                     <form>
-						姓名*: <input type="text"><br>
-						手機*: <input type="tel"><br>
-						欲辦金額*: <input type="number" id="dollar">
+						姓名: <input type="text" name="name"><br>
+						手機: <input type="tel" name="phone"><br>
+						E-mail: <input type="email" name="mail"><br>
+						欲辦金額: <input type="number" id="dollar">
 						<select id="currency">
 							<option value="ntd">台幣</option>
 							<option value="us">美金</option>
@@ -213,17 +270,18 @@
 						</select><br>
 					</form>
 					<button onclick='Send()'>送出</button>
+					<br><div id="order_num"></div>
 					<div id="result_dollar"></div>
 					<div id="account"></div>
 					<div id="pay"></div>
 				    <br>
 				    <h3 style="font-family: 微軟正黑體;">取得i-Deal卡號</h3><br>
 					<form>
-						姓名*: <input type="text"><br>
-						手機*: <input type="tel"><br>
-						匯款帳戶後五碼*: <input type="number" id="last5">
+						訂單編號: <input type="number" id="order_list2"><br>
+						匯款帳戶後五碼: <input type="number" id="last5">
 					</form>
 					<button onclick='HadPay()'>已繳款</button>
+					<br><div id="show_num"></div>
 					<div id="card_num"></div>
 					<div id="card_safe"></div>
 					<div id="deadline"></div>
